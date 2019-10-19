@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./../font/stylesheet.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Preeti';
+            font-size: 20px;
+        }
+        input:-ms-input-placeholder{
+            font-family: 'Preeti';
+            font-size: 20px;
+
+        }
+        input::-moz-placeholder{
+            font-family: 'Preeti';
+            font-size: 20px;
+
+        }
+        input::-webkit-input-placeholder{
+            font-family: 'Preeti';
+            font-size: 20px;
+
+        }
+        input[type=text],
+        input[type=number],
+        input[type=date],
+        select {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            width: 50%;
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            /* flex-flow: row wrap; */
+        }
+
+        input[type=date] {
+            height: 41px;
+        }
+
+        input[type=submit] {
+            width: 20%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: auto;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .heading {
+            margin-left: 50%;
+        }
+
+        .info {
+            width: 100%;
+            background-color: rgb(76, 127, 175);
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .infoo {
+            width: 20%;
+            background-color: rgb(76, 127, 175);
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        #button {
+            height: 50px;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="heading">
+            <h3>6«fon r]s .</h3>
+        </div>
+        <div class="info">कृपया फारम भर्नुहोस्</div><br/>
+        <form action="/action_page.php">
+            <br/>
+            <br/>
+            <div class="form-control" style="display:flex; flex-direction:row; justify-content: space-between;">
+                <div class="form-group">
+                    <label for="dartanum">lga]bg btf{ g</label>
+                    <input type="number" id="dartanum" name="dartanum" placeholder="lga]bg btf{ g" />
+                </div>
+                <div class="form-group">
+                    <label for="Miti">ldlt</label>
+                    <input type="date" id="Miti" name="Miti" placeholder="ldlt" />
+                </div>
+            </div>
+
+            <br/><br/>
+            <div class="infoo">!= ga]bssf] lja/0f</div>
+           <br/>
+
+            <div class="form-control">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gffd,y/</th>
+                            <th>Gfful/stf g+=</th>
+                            <th>Gfful/stf hf/L ldlt</th>
+                            <th>Gfful/stf hf/L lhNnf</th>
+                            <th>Affa'÷kltsf] gfd</th>
+                            <th>Affh]÷;;'/fsf] gfd</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="nibedakNaamThar" name="nibedakNaamThar" /></td>
+                            <td><input type="text" id="nibedakNagariktaNumber" name="nibedakNagariktaNumber" /></td>
+                            <td><input type="date" id="nibedakNagariktaJariMiti" name="nibedakNagariktaJariMiti" /></td>
+                            <td><input type="text" id="nibedakNagariktaJariJilla" name="nibedakNagariktaJariJilla" /></td>
+                            <td><input type="text" id="nibedakBabuPitakoNaam" name="nibedakBabuPitakoNaam"/></td>
+                            <td><input type="text" id="nibedakBajeSasuraNaam" name="nibedakBajeSasuraNaam"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+            </div>
+            <div>
+                    <input type="button" value="+" id="button">
+                    <input type="button" value="-" id="button">
+            </div>
+            <br/><br/>
+            <div class="infoo">@= hUUffwgLsf] lja/0f</div>
+           <br/>
+
+            <div class="form-control">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gffd,y/</th>
+                            <th>Gfful/stf g+=</th>
+                            <th>Gfful/stf hf/L ldlt</th>
+                            <th>Gfful/stf hf/L lhNnf</th>
+                            <th>Affa'÷kltsf] gfd</th>
+                            <th>Affh]÷;;'/fsf] gfd</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="jaggaNaamThar" name="jaggaNaamThar" /></td>
+                            <td><input type="text" id="jaggaNagariktaNumber" name="jaggaNagariktaNumber" /></td>
+                            <td><input type="date" id="jaggaNagariktaJariMiti" name="jaggaNagariktaJariMiti" /></td>
+                            <td><input type="text" id="jaggaNagariktaJariJilla" name="jaggaNagariktaJariJilla" /></td>
+                            <td><input type="text" id="jaggaBabuPitakoNaam" name="jaggaBabuPitakoNaam"/></td>
+                            <td><input type="text" id="jaggaBajeSasuraNaam" name="jaggaBajeSasuraNaam"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+            </div>
+            <div>
+                    <input type="button" value="+" id="button">
+                    <input type="button" value="-" id="button">
+            </div>
+
+            <br/><br/>
+            <div class="infoo">#= 6«fon r]s x'g] hUufsf] laa/0f </div>
+           <br/>
+
+           <div class="form-control">
+            <table>
+                <thead>
+                    <tr>
+                        <th>lhNnf</th>
+                        <th>Ufflj;</th>
+                        <th>Jf8f g++=÷l;6 g++=</th>
+                        <th>lsQf g++</th>
+                        <th>If]qkmn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="jaggajilla" name="jaggajilla" /></td>
+                        <td><input type="text" id="jaggagabisa" name="jaggagabisa" /></td>
+                        <td><input type="number" id="jaggaoda" name="jaggaoda" /></td>
+                        <td><input type="number" id="jaggakirta" name="jaggakirta" /></td>
+                        <td><input type="text" id="jaggachetrafhal" name="jaggachetrafhal"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            </div>
+            <div>
+                    <input type="button" value="+" id="button">
+                    <input type="button" value="-" id="button">
+            </div>
+
+            <br/><br/>
+            <div class="infoo">$= 6«fon r]ssf] nflu lg0f{o  lbg] lgsfo</div>
+           <br/>
+
+           <div class="form-control">
+            <table>
+                <thead>
+                    <tr>
+                        <th>lgsfosf] gfd</th>
+                        <th>lhNnf</th>
+                        <th>Kfqsf] r=g++</th>
+                        <th>ldlt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="nirnayanaam" name="nirnayanaam" /></td>
+                        <td><input type="text" id="nirnayajilla" name="nirnayajilla" /></td>
+                        <td><input type="number" id="nirnayachanum" name="nirnayachanum" /></td>
+                        <td><input type="date" id="nirnayadate" name="nirnayadate" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            </div>
+            <div>
+                    <input type="button" value="+" id="button">
+                    <input type="button" value="-" id="button">
+            </div>
+            <br/><br/>
+
+            <div class="infoo">%= df]7 /f]Ssfsf] lja/0f </div>
+            <br/>
+            <div>
+                ;DalGwt df]7 kmfF6af6 <input type="text" id="phatbatajaggako1" name="phatbatajaggako1" />hUufsf] ;|]:tf sfod 5 /f]Ssf b]lvPg egL n]vL cfPsf] .
+            </div>
+            <br/><br/>
+
+            
+            <div class="infoo">^= tfd]nLsf] Aoxf]/f M </div>
+            <br/>
+            <div>
+                <input type="text" id="behora1" name="behora1" />
+            </div>
+
+            <br/><br/>
+            <div class="infoo">&= ;+nUg k|df0f</div>
+           <br/>
+
+            <div class="form-control">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>gful/stf k|df0fkqsf] k|ltlnkL</th>
+                            <th>dfnkf]t lt/]sf] /l;b</th>
+                            <th>hUuf wgL btf{ k|df0f kq k|ltlnkL</th>
+                            <th>lkmN8a'ssf] k|dfl0ft k|ltlnkL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>gfkL sfof{no,;fFv' sf7df8f}sf] r g<input type="number" id="chanumber" name="chanumber" />ldlt<input type="date" id="mitti" name="mitti" />sf] kq</td>
+                            <td><input type="file" id="nagaritapatra1" name="nagaritapatra1" /></td>
+                            <td><input type="file" id="malpottiraeko1" name="malpottiraeko1" /></td>
+                            <td><input type="file" id="jaggadhanipatra1" name="jaggadhanipatra1" /></td>
+                            <td><input type="file" id="phildbook" name="phildbook" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+            </div>
+            <div>
+                    <input type="button" value="+" id="button">
+                    <input type="button" value="-" id="button">
+            </div>
+
+            <br/><br/>
+            <div class="infoo">*= sfof{nosf]=lg0f{o </div>
+           <br/>
+
+           <div>
+            ldl;n ;+nUg k|df0f tyf lja/0fsf cfwf/df x]bf{ a9 ePsf] If]qkmn<input type="text" id="chetrafhal" name="chetrafhal"/> sf] lj=;+= @)@$ ;fn b]lvsf] dfnkf]t b:t'/ a'emL b]xfosf] hUuf b]xfosf b]xfo adf]lhd If]qkmn a9 sfod x'g plrt b]vL lg0f{ofy{ k]z u/]sf] 5' . 
+           </div>
+           <br/>
+
+           <div class="infoo">If]qkmn ;+zf]wg x'g] hUufsf] lja/0f</div>
+            <br/>
+
+           <div class="form-control">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>lhNnf</th>
+                            <th>Ufflj;</th>
+                            <th>Jf8f g++=÷l;6 g++=</th>
+                            <th>lsQf g++</th>
+                            <th>;fljssf] If]qkmn</th>
+                            <th>a9 sfod ePsf] If]qkmn</th>
+                            <th>6«fon r]s kl5 sfod ePsf] s"n If]qkmn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="karyalayanirmanjilla" name="karayalayanirmanjilla" /></td>
+                            <td><input type="text" id="karyalayanirmangabisa" name="karyalayanirmangabisa" /></td>
+                            <td><input type="number" id="karyalanirmanoda" name="karyalanirmanoda" /></td>
+                            <td><input type="number" id="karyalanirmankirta" name="karyalanirmankirta" /></td>
+                            <td><input type="text" id="karyalanirmanchetrafhal" name="karyalanirmanchetrafhal"/></td>
+                            <td><input type="number" id="karyalanirmanchetrafhal1" name="karyalanirmanchetrafhal1" /></td>
+                            <td><input type="text" id="karyalanirmanchetrafhal2" name="karyalanirmanchetrafhal2"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                </div>
+            <br/><br/>
+           
+            <input type="submit" value="फारम बुझाउनुहोस्">
+        </form>
+
+    </div>
+</body>
+
+</html>
